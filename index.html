@@ -4,8 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <main class="content-wrapper">
+        <section class="score">
+            <h2>Score</h2>
+            <div class="score-container">
+                <span id="player-score">0</span>
+                <p>VS</p>
+                <span id="computer-score">0</span> 
+            </div>
+        </section>
+
+        <div class="arena-wrapper">
+            <div class="player-container">
+                <h2>Player</h2>
+                <button id="btn-rock" class="btn-movement">Rock</button>
+                <button id="btn-paper" class="btn-movement">Paper</button>
+                <button id="btn-scissors" class="btn-movement">Scissors</button>
+            </div>
+
+            <section id="arena">
+                <div class="move-display" id="player-display">
+                    <h3>player</h3>
+                    <div id="player-move"></div>
+                </div>
+    
+                <div class="move-display" id="computer-display">
+                    <h3>Computer</h3>
+                    <div id="computer-move"></div>
+                </div>
+            </section>
+
+            <div class="computer-container">
+                <h2>Computer</h2>
+                <div class="move-option btn-movement">Rock</div>
+                <div class="move-option btn-movement">Paper</div>
+                <div class="move-option btn-movement">Scissors</div>
+            </div>
+        </div>
+        
+        
+        <div id="round-result" class="round-result"></div>
+        <button id="btn-restart" class="btn-restart hidden">Play Again</button>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
